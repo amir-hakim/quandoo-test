@@ -224,15 +224,15 @@ public final class GOLRenderingView extends View {
 		map = new boolean[HEIGHT][WIDTH];
 
 		/*
-		 * Printing Logo screen (16 * 14 cells)
+		 * Printing Random pixels on the screen
 		 */
-		printLogoOnScreen();
+		printRandomPixels();
 	}
 
     /**
-     * Print 'Game Of Life' word on screen with pixels
+     * Print random pixels on the screen
      */
-    private void printLogoOnScreen() {
+    private void printRandomPixels() {
 		int xOffset = HEIGHT / 2 - 10;
 		int yOffset = WIDTH / 2 - 7;
 
