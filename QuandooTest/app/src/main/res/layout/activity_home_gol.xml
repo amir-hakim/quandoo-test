@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/black" >
+
+    <com.test.quandoo.view.components.GOLRenderingView
+        android:id="@+id/viewGOLRendering"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0"
+        />
+
+    <!-- Bottom Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/control_btns_height"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:gravity="center">
+
+        <!-- Start Game -->
+        <Button
+            android:id="@+id/buttonStartGame"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.35"
+            android:text="@string/startgame"/>
+        <!-- Stop Game -->
+        <Button
+            android:id="@+id/buttonStopGame"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.35"
+            android:text="@string/stopgame"/>
+        <!-- Settings -->
+        <Button
+            android:id="@+id/buttonSettingsGame"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:text="@string/settings"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:rule="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_marginLeft="@dimen/rule_editor_outer_margin"
+            android:layout_marginTop="@dimen/rule_editor_outer_margin"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/rule_name"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/editTextName"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/rule_editor_outer_margin">
+
+                <requestFocus />
+            </EditText>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginLeft="@dimen/rule_editor_outer_margin"
+            android:layout_marginTop="@dimen/rule_editor_outer_margin"
+            android:layout_marginRight="@dimen/rule_editor_radiobtn_margin"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/Neighbours"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/checkbox_explanation" />
+        </LinearLayout>
+
+        <com.test.quandoo.view.components.RuleRowView
+            android:id="@+id/ruleRowView0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/rule_editor_outer_margin"
+            android:gravity="center_vertical"
+            rule:name="@string/s0" />
+
+        <com.test.quandoo.view.components.RuleRowView
+            android:id="@+id/ruleRowView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/rule_editor_outer_margin"
+            android:gravity="center_vertical"
+            rule:name="@string/s1" />
+
+        <com.test.quandoo.view.components.RuleRowView
+            android:id="@+id/ruleRowView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/rule_editor_outer_margin"
+            android:gravity="center_vertical"
+            rule:name="@string/s2" />
+
+        <com.test.quandoo.view.components.RuleRowView
+            android:id="@+id/ruleRowView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/rule_editor_outer_margin"
+            android:gravity="center_vertical"
+            rule:name="@string/s3" />
+
+        <com.test.quandoo.view.components.RuleRowView
+            android:id="@+id/ruleRowView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/rule_editor_outer_margin"
+            android:gravity="center_vertical"
+            rule:name="@string/s4" />
+
+        <com.test.quandoo.view.components.RuleRowView
+            android:id="@+id/ruleRowView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/rule_editor_outer_margin"
+            android:gravity="center_vertical"
+            rule:name="@string/s5" />
+
+        <com.test.quandoo.view.components.RuleRowView
+            android:id="@+id/ruleRowView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/rule_editor_outer_margin"
+            android:gravity="center_vertical"
+            rule:name="@string/s6" />
+
+        <com.test.quandoo.view.components.RuleRowView
+            android:id="@+id/ruleRowView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/rule_editor_outer_margin"
+            android:gravity="center_vertical"
+            rule:name="@string/s7" />
+
+        <com.test.quandoo.view.components.RuleRowView
+            android:id="@+id/ruleRowView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/rule_editor_outer_margin"
+            android:gravity="center_vertical"
+            rule:name="@string/s8" />
+
+        <!-- Bottom Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="@dimen/rule_editor_outer_margin"
+            android:orientation="horizontal">
+            <!-- Save Rule -->
+            <Button
+                android:id="@+id/buttonSaveRule"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.35"
+                android:text="@string/save" />
+            <!-- Load Rule -->
+            <Button
+                android:id="@+id/buttonLoadRule"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.35"
+                android:text="@string/load" />
+            <!-- Delete Rule -->
+            <Button
+                android:id="@+id/buttonDeleteRule"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="@string/delete" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
